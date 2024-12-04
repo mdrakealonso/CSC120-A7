@@ -35,7 +35,6 @@ public class House extends Building {
    * @param name a House's name
    * @param address a House's address
    * @param nFloors the number of stories inside a House
-   * @param residents residents living in a House
    */
   public House(String name, String address, int nFloors){
     super(name, address, nFloors);

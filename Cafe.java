@@ -118,7 +118,7 @@ public class Cafe extends Building{
             throw new RuntimeException("Invalid floor number. Valid range for this Building is 1-" + this.nFloors +".");
         }
         if (floorNum > 1) {
-            System.out.println("You aren't permitted access to floor #" + floorNum + " of " + this.name);
+            throw new RuntimeException("You aren't permitted access to floor #" + floorNum + " of " + this.name);
         }
         System.out.println("You are currently on floor #" + activeFloor + " of " + this.name);
     }
